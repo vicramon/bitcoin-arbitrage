@@ -3,6 +3,7 @@ Bundler.require
 
 LOGGER = Logger.new(STDOUT)
 LOGGER.level = Logger::INFO
+ENV["REDIS_URL"] = ENV["REDISTOGO_URL"] if ENV["REDISTOGO_URL"]
 REDIS = Redis.new
 FEE = 0.2
 
