@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
-gem "redis"
 gem "btce"
+gem "pry"
